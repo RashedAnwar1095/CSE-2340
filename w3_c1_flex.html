@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basics</title>
+
+    <style>
+        body
+        {
+            font-family:'Courier New', Courier, monospace;
+            margin: 0;
+            background-color: #d1efff;
+            color: #222;
+        }
+
+        .header
+        {
+            background-color: #07337e;
+            padding: 20px;
+            color:#ffffff;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .card
+        {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px #b2bfce;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        nav
+        {
+            display: flex;
+            gap: 50px;
+        }
+
+        nav a
+        {
+            color:#ffffff;
+            text-decoration: none;
+        }
+
+        nav a:hover
+        {
+            text-decoration: underline;
+            color:#7ad1ff
+        }
+
+        main
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 id="main-title">Flex Basics</h1>
+        <nav>
+            <a href="w2_c3_css.html">CSS Basics</a>
+            <a href="w3_c1_flex.html">Flex Basics</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>3AM</h2>
+            <p>Student Number: 42</p>
+        </div>
+
+        <div class="card">
+            <h2>3BM</h2>
+            <p>Student Number: 41</p>
+        </div>
+
+        <div class="card">
+            <h2>3CM</h2>
+            <p>Student Number: 39</p>
+        </div>
+
+        <div class="card">
+            <h2>3DM</h2>
+            <p>Student Number: 45</p>
+        </div>
+    </main>
+</body>
+</html>
