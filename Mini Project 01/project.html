@@ -13,15 +13,88 @@
     <nav aria-label="main nav">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="#project">Projects</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <main>
-        <section>
+        <section id="about" class="card">
             <h2>About Me</h2>
-            <img class="myimg" src="" alt="My image">
+            <img class="myimg" src="images/rashed_anwar_psp.jpg" alt="My image">
+            <p class="des">
+                Assalamu Alaikum. My name is Rashed Anwar Ovi. I'm a student of Computer Science 
+                and Engineering Department. I enjoy programming, experimenting with different technologies
+                and turning small ideas into things that actually works. I'm still learning and exploring
+                but every project gives me a chance to get a little better at what I do.
+            </p>
+        </section>
+
+        <section id="skills" class="card">
+            <h2>My Skills</h2>
+            <ul>
+                <li>C/C++</li>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Git & Github</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>NRS SHOP MANAGEMENT SYSTEM</h3>
+                <p class="des">
+                    NRS Shop Management System is a console-based mini CRM application written in C.
+                    It helps small shop owners manage products, customers and sales records using
+                    file handling. This project demonstrates how real-world business operations can
+                    be implemented using C programming concepts such as structures, functions and file I/O.
+                </p>
+                <a href="https://github.com/RashedAnwar1095/NRS-SHOP-MANAGEMENT-SYSTEM" class="button">
+                    See on Github
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>PERSONAL PROFILE WEBSITE</h3>
+                <p class="des">
+                    A personal profile website created using semantic HTML5 and CSS3.
+                    It contains information about my skills, projects, and contact details.
+                </p>
+                <a href="https://github.com/RashedAnwar1095/CSE-2340/tree/main/Mini%20Project%2001" class="button">
+                    See on Github
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <p>
+                Email: <a href="mailto:rashedanwar9507@gmail.com">rashedanwar9507@gmail.com</a>
+            </p>
+            
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="message">Message:</label>
+                    <input type="text" id="message" name="message" required>
+                </div>
+
+                <button type="button" class="button">Send Message</button>
+            </form>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2026 Rashed Anwar. All rights reserved.</p>
+    </footer>
 </body>
 </html>
