@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Profile Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
         <h1>Mohammad Rashed Anwar Ovi</h1>
-    </header>
 
-    <nav aria-label="main nav">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
     <main>
         <section id="about" class="card">
             <h2>About Me</h2>
             <img class="myimg" src="images/rashed_anwar_psp.jpg" alt="My image">
             <p class="des">
-                Assalamu Alaikum. My name is Rashed Anwar Ovi. I'm a student of Computer Science 
+                Assalamu Alaikum. I'm Rashed Anwar Ovi. I'm a student of Computer Science 
                 and Engineering Department. I enjoy programming, experimenting with different technologies
                 and turning small ideas into things that actually works. I'm still learning and exploring
                 but every project gives me a chance to get a little better at what I do.
@@ -70,26 +71,25 @@
         <section id="contact" class="card">
             <h2>Contact Me</h2>
             <p>
-                Email: <a href="mailto:rashedanwar9507@gmail.com">rashedanwar9507@gmail.com</a>
+                Email: <a href="mailto:rashedanwar9507@gmail.com" class="mail">rashedanwar9507@gmail.com</a>
             </p>
-            
             <form>
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                <div class="label1">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 </div>
 
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="label1">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
-
-                <div>
-                    <label for="message">Message:</label>
-                    <input type="text" id="message" name="message" required>
+                
+                <div class="label1">
+                    <label for="message">Message:</label><br>
+                    <input type="text" id="message" name="message" placeholder="Write your message" required>
                 </div>
-
-                <button type="button" class="button">Send Message</button>
+                
+                <button type="submit" class="submit-button">Send Message</button>
             </form>
         </section>
     </main>
