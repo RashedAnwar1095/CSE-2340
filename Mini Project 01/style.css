@@ -15,22 +15,25 @@ select
 body
 {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #2D283E;
+    background-color: #0A0A0A;
     margin: 0;
-    color: #D1D7E0;
+    color: #E8DCC8;
     line-height: 1.7;
 }
 
 .header
 {
-    background-color: #802BB1;
+    background-color: #221b17;
     padding: 16px;
-    color:#D1D7E0;
+    color:#E8DCC8;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav
@@ -42,13 +45,13 @@ nav
 
 nav a
 {
-    color: #D1D7E0;
+    color: #E8DCC8;
     text-decoration: none;
 }
 
 nav a:hover
 {
-    color: #d885ff;
+    color: #FF9F1C;
     text-decoration: underline;
 }
 
@@ -59,22 +62,23 @@ main
     margin: 30px auto;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     font-size: 18px;
 }
 
 .card
 {
-    background-color: #564F6F;
+    background-color: #1b1b1b;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgb(42, 39, 42);
-    padding: 20px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+    padding: 25px;
     margin: 30px;
     text-align: justify;
 }
 
 .card h2
 {
-    color: #c464fb;
+    color: #E08E1A;
     font-size: 28px;
     text-align: center;
 }
@@ -91,27 +95,41 @@ main
 
 .card li
 {
-    background: #433e58;
-    border: 1px solid #ecd0ff;
+    background: #1F1B16;
+    border: 1px solid #C7791A;
     border-radius: 30px;
     padding: 8px 26px;
 }
 
+.content
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 60px;
+    padding: 0 15px;
+}
+
+.des
+{
+    flex: 1;
+}
+
 .myimg
 {
-    height: 20%;
-    width: 30%;
-    border-radius: 30px;
-    border: 3px solid #9b4fc7;
-    display: block;
-    margin: auto;
+    height: auto;
+    width: 280px;
+    border-radius: 20px;
+    border: 1px solid #B5651D;
     margin-bottom: 25px;
+    flex-shrink: 0;
 }
 
 .project
 {
-    background: #433e58;
-    border: 0.5px solid #ecd0ff;
+    background: #1F1B16;
+    border: 0.5px solid #C7791A;
     margin-top: 20px;
     border-radius: 18px;
     padding: 20px;
@@ -119,41 +137,41 @@ main
 
 .project h3
 {
-    color: #be74fe;
+    color: #FF9F1C;
     padding-bottom: 6px;
 }
 
 .button
 {
     display: inline-block;
-    background-color: #9b4fc7;
+    background-color: #B5651D;
     margin-top: 20px;
     padding: 5px 12px;
     border-radius: 15px;
     text-decoration: none;
-    color:#D1D7E0;
+    color:#0A0A0A;
 }
 
 .button:hover
 {
-    background-color: #802BB1;
+    background-color: #FF9F1C;
 }
 
 .button:focus
 {
-    outline: 1px solid #8946b0;
+    outline: 1px solid #E08E1A;
     outline-offset: 2px;
 }
 
 .mail
 {
-    color: #D1D7E0;
+    color: #E08E1A;
     text-decoration: none;
 }
 
 .mail:hover
 {
-    color: #d885ff;
+    color: #FF9F1C;
     text-decoration: underline;
 }
 
@@ -172,8 +190,8 @@ main
     display: block;
     border: none;
     border-radius: 10px;
-    background-color: #9b4fc7;
-    color: #D1D7E0;
+    background-color: #B5651D;
+    color: #0A0A0A;
     padding: 10px 12px;
     margin-top: 15px;
     width: 100%;
@@ -182,12 +200,12 @@ main
 
 .submit-button:hover
 {
-    background-color: #802BB1;
+    background-color: #FF9F1C;
 }
 
 .submit-button:focus
 {
-    outline: 1px solid #8946b0;
+    outline: 1px solid #E08E1A;
     outline-offset: 2px;
 }
 
