@@ -1,0 +1,66 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Roboto Serif, sans-serif;
+    color: #1f2937;
+    background-color: #f5f7fb;
+}
+/* sidebar section */
+.sidebar
+{
+    background-color: #111827;
+    padding: 24px;
+    width: 100%;
+}
+
+.logo
+{
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    gap: 0 8px;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.sidebar nav
+{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar a
+{
+    text-decoration: none;
+    color: #cbd5e1;
+    padding: 12px 14px;
+    border-radius: 8px;
+}
+
+.sidebar a:hover
+{
+    color: white;
+    background-color: #1f2937;
+    cursor: pointer;
+}
+
+.sidebar a.active
+{
+    background-color: #223e78;
+    color: white;
+}
+
+.sidebar a:focus
+{
+    background-color: #223e78;
+    color: white;
+}
