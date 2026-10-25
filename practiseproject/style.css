@@ -241,7 +241,7 @@ main
 
 .course-card h2
 {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 5px;
     margin-bottom: 13px;
 }
@@ -304,3 +304,78 @@ main
     outline-offset: 2px;
 }
 
+.bottom-grid
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.panel
+{
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.panel-header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.panel-header h2
+{
+    font-size: 20px;
+}
+
+.panel-header a
+{
+    text-decoration: none;
+    color: #235fe0;
+    font-size: 14px;
+}
+
+.task
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 15px 0;
+}
+
+.task:last-child
+{
+    border-bottom: none;
+}
+
+.task strong
+{
+    display: block;
+    margin-bottom: 4px;
+}
+
+.task span
+{
+    font-size: 13px;
+    color: #64748b;
+}
+
+.activity
+{
+    border-bottom: 1px solid #e5e7eb;
+    padding: 12px 0;
+    color: #475569;
+    margin: 0;
+}
+
+.activity:last-child
+{
+    border-bottom: none;
+}
