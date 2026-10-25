@@ -3,4 +3,4 @@
 
 #classproject: https://classproject-rust.vercel.app/
 
-#Eduspace practise project: https://rashedanwar1095.github.io/CSE-2340/practiseproject/
+#Eduspace practise project: https://cse-2340-practiseproject.vercel.app/
