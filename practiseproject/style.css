@@ -107,7 +107,6 @@ main
     background-color: #111827;
     color: white;
     font-weight: bold;
-    justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,3 +148,159 @@ main
     font-size: 13px;
     color: #64748b;
 }
+
+.section-header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.section-header p
+{
+    font-size: 14px;
+    color: #64748b;
+}
+
+.section-header h2
+{
+    margin: 0;
+}
+
+.section-header a
+{
+    text-decoration: none;
+    color: #235fe0;
+}
+
+.course-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.course-card
+{
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 20px;
+    gap: 16px;
+
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 16px;
+    transition: transform .2s;
+}
+
+.course-card:hover
+{
+    transform: translateY(-4px);
+}
+
+.course-icon
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    color: white;
+    font-size: 25px;
+    
+    display: grid;
+    place-items: center;
+}
+
+.html
+{
+    background-color: #e44d26;
+}
+
+.data
+{
+    background-color: #2563eb;
+}
+
+.ai
+{
+    background-color: #7c3aed;
+}
+
+.software
+{
+    background-color: #059669;
+}
+
+.course-category
+{
+    font-size: 12px;
+    color: #64748b;
+}
+
+.course-card h2
+{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 13px;
+}
+
+.course-card p
+{
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.progress-info
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-top: 18px;
+}
+
+.progress-info strong
+{
+    font-family: sans-serif;
+}
+
+.progress-bar
+{
+    height: 7px;
+    overflow: hidden;
+    background-color: #e5e7eb;
+    margin: 7px 0 15px;
+    border-radius: 10px;
+}
+
+.progress
+{
+    height: 100%;
+    background-color: #2563eb;
+}
+
+.course-button
+{
+    border: none;
+    padding: 10px 14px;
+    border-radius: 7px;
+    background-color: #111827;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.course-button:hover
+{
+    background-color: #2563eb;
+}
+
+.course-button:focus
+{
+    outline: 3px solid #93c5fd;
+    outline-offset: 2px;
+}
+
