@@ -6,7 +6,7 @@
     <title>Taste of Teyvat</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="overflow-hidden bg-[#E9D8B5] font-sans text-[#49372E]">
+<body class="overflow-x-hidden bg-[#E9D8B5] font-sans text-[#49372E]">
     <header class="sticky top-0 z-50 border-b border-[#B78B50]/50 bg-[#253B35]">
         <nav class="flex flex-wrap items-center justify-between px-4 py-3">
             <p class="font-serif text-2xl font-bold text-[#E9D8B5]">✦ Taste of Teyvat</p>
@@ -42,9 +42,121 @@
                     </div>
                 </div>
 
-                <img src="assets/hero.jpg" alt="Taste of Teyvat" class="mx-auto aspect-square max-w-[500px]
+                <img src="assets/hero.jpg" alt="Taste of Teyvat" class="mx-auto aspect-square max-w-[450px]
                          rounded-3xl border-4 border-[#B78B50] object-cover shadow-2xl">
             </div>
+        </section>
+
+        <section id="menu" class="mx-auto max-w-6xl scroll-mt-16 px-4 py-20">
+            <h2 class="text-center font-serif text-3xl font-bold md:text-4xl">Featured Dishes</h2>
+            <div class="mx-auto mb-10 mt-3 h-1 w-24 rounded bg-[#B78B50]"></div>
+
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <article class="flex flex-col overflow-hidden rounded-2xl border-2 border-[#B78B50]/60
+                             bg-[#f4e8cc] shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <img src="assets/adeptus-temptation.jpg" alt="Adeptus' Temptation" class="aspect-4/3 w-full object-cover">
+                    <div class="flex flex-1 flex-col p-5">
+                        <h3 class="font-serif text-xl font-bold">Adeptus' Temptation</h3>
+                        <p class="text-sm font-semibold text-[#B78B50]">Liyue</p>
+                        <p class="mt-2 flex-1 text-sm leading-relaxed">A fiery, fragrant dish of tender meat and bold spices, 
+                            said to be fit for the immortal adepti.</p>
+                        <p class="mt-4 font-bold">🪙 320 Mora</p>
+                        <button type="button" class="mt-3 w-full cursor-pointer rounded-full bg-[#B78B50] px-6
+                                      py-3 text-center font-semibold text-[#253B35] transition hover:bg-[#d0a566]">
+                            Order Now
+                        </button>
+                    </div>
+                </article>
+
+                <article class="flex flex-col overflow-hidden rounded-2xl border-2 border-[#B78B50]/60
+                             bg-[#f4e8cc] shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <img src="assets/adeptus-temptation.jpg" alt="Adeptus' Temptation" class="aspect-4/3 w-full object-cover">
+                    <div class="flex flex-1 flex-col p-5">
+                        <h3 class="font-serif text-xl font-bold">Sticky Honey Roast</h3>
+                        <p class="text-sm font-semibold text-[#B78B50]">Mondstadt</p>
+                        <p class="mt-2 flex-1 text-sm leading-relaxed">Juicy roasted meat glazed with sweet honey. A hearty 
+                            favorite at the Good Hunter.</p>
+                        <p class="mt-4 font-bold">🪙 180 Mora</p>
+                        <button type="button" class="mt-3 w-full cursor-pointer rounded-full bg-[#B78B50] px-6
+                                      py-3 text-center font-semibold text-[#253B35] transition hover:bg-[#d0a566]">
+                            Order Now
+                        </button>
+                    </div>
+                </article>
+
+                <article class="flex flex-col overflow-hidden rounded-2xl border-2 border-[#B78B50]/60
+                             bg-[#f4e8cc] shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <img src="assets/adeptus-temptation.jpg" alt="Adeptus' Temptation" class="aspect-4/3 w-full object-cover">
+                    <div class="flex flex-1 flex-col p-5">
+                        <h3 class="font-serif text-xl font-bold">Tricolor Dango</h3>
+                        <p class="text-sm font-semibold text-[#B78B50]">Inazuma</p>
+                        <p class="mt-2 flex-1 text-sm leading-relaxed">Soft, chewy rice dumplings in three colors on a skewer. 
+                            A sweet treat for any festival.</p>
+                        <p class="mt-4 font-bold">🪙 90 Mora</p>
+                        <button type="button" class="mt-3 w-full cursor-pointer rounded-full bg-[#B78B50] px-6
+                                      py-3 text-center font-semibold text-[#253B35] transition hover:bg-[#d0a566]">
+                            Order Now
+                        </button>
+                    </div>
+                </article>
+
+                <article class="flex flex-col overflow-hidden rounded-2xl border-2 border-[#B78B50]/60
+                             bg-[#f4e8cc] shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <img src="assets/adeptus-temptation.jpg" alt="Adeptus' Temptation" class="aspect-4/3 w-full object-cover">
+                    <div class="flex flex-1 flex-col p-5">
+                        <h3 class="font-serif text-xl font-bold">Tahchin</h3>
+                        <p class="text-sm font-semibold text-[#B78B50]">Sumeru</p>
+                        <p class="mt-2 flex-1 text-sm leading-relaxed">A golden, crispy-crusted baked rice cake with saffron and 
+                            tender meat. Warm and aromatic.</p>
+                        <p class="mt-4 font-bold">🪙 240 Mora</p>
+                        <button type="button" class="mt-3 w-full cursor-pointer rounded-full bg-[#B78B50] px-6
+                                      py-3 text-center font-semibold text-[#253B35] transition hover:bg-[#d0a566]">
+                            Order Now
+                        </button>
+                    </div>
+                </article>
+
+                <article class="flex flex-col overflow-hidden rounded-2xl border-2 border-[#B78B50]/60
+                             bg-[#f4e8cc] shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <img src="assets/adeptus-temptation.jpg" alt="Adeptus' Temptation" class="aspect-4/3 w-full object-cover">
+                    <div class="flex flex-1 flex-col p-5">
+                        <h3 class="font-serif text-xl font-bold">Poisson Seafood Soup</h3>
+                        <p class="text-sm font-semibold text-[#B78B50]">Fontaine</p>
+                        <p class="mt-2 flex-1 text-sm leading-relaxed">A refined, creamy seafood soup served with 
+                            Fontaine's trademark elegance.</p>
+                        <p class="mt-4 font-bold">🪙 280 Mora</p>
+                        <button type="button" class="mt-3 w-full cursor-pointer rounded-full bg-[#B78B50] px-6
+                                      py-3 text-center font-semibold text-[#253B35] transition hover:bg-[#d0a566]">
+                            Order Now
+                        </button>
+                    </div>
+                </article>
+
+                <article class="flex flex-col overflow-hidden rounded-2xl border-2 border-[#B78B50]/60
+                             bg-[#f4e8cc] shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <img src="assets/adeptus-temptation.jpg" alt="Adeptus' Temptation" class="aspect-4/3 w-full object-cover">
+                    <div class="flex flex-1 flex-col p-5">
+                        <h3 class="font-serif text-xl font-bold">Frostfire Borscht</h3>
+                        <p class="text-sm font-semibold text-[#B78B50]">Snezhnaya</p>
+                        <p class="mt-2 flex-1 text-sm leading-relaxed">A deep crimson beet broth simmered with smoked meat
+                            and root vegetables, finished with a cool dollop of sour cream.</p>
+                        <p class="mt-4 font-bold">🪙 210 Mora</p>
+                        <button type="button" class="mt-3 w-full cursor-pointer rounded-full bg-[#B78B50] px-6
+                                      py-3 text-center font-semibold text-[#253B35] transition hover:bg-[#d0a566]">
+                            Order Now
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="scroll-mt-16 bg-[#253B35] px-4 py-20 text-center text-[#E9D8B5]">
+            <h2 class="font-serif text-3xl font-bold md:text-4xl">About Us</h2>
+            <div class="mx-auto mb-10 mt-3 h-1 w-24 rounded bg-[#B78B50]"></div>
+            <p class="mx-auto max-w-2xl text-lg leading-relaxed">
+                At Taste of Teyvat, we bring together the culinary traditions of every nation. Whether you're a traveler 
+                from Mondstadt or an adventurer exploring Snezhnaya, our kitchen welcomes everyone with the finest flavors of Teyvat.
+            </p>
         </section>
     </main>
 </body>
