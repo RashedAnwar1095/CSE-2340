@@ -4,3 +4,5 @@
 #classproject: https://classproject-rust.vercel.app/
 
 #Eduspace practise project: https://cse-2340-practiseproject.vercel.app/
+
+#mini-project-02: https://rashedanwar1095.github.io/CSE-2340/Taste-of-Teyvat/
