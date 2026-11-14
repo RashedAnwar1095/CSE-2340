@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taste of Teyvat</title>
-    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="overflow-hidden bg-[#E9D8B5] font-sans text-[#49372E]">
     <header class="sticky top-0 z-50 border-b border-[#B78B50]/50 bg-[#253B35]">
@@ -15,7 +15,7 @@
             <label for="nav-toggle" class="cursor-pointer text-3xl text-[#E9D8B5] md:hidden">☰</label>
 
             <ul class="hidden w-full flex-col gap-1 text-[#E9D8B5] peer-checked:flex
-                    md:flex md:w-auto md:flex-row md:gap-8 text-[16px]">
+                    md:flex md:w-auto md:flex-row md:gap-8 text-[16px] font-bold">
                 <li><a href="#home" class="block py-2 hover:text-[#B78B50]">Home</a></li>
                 <li><a href="#about" class="block py-2 hover:text-[#B78B50]">About</a></li>
                 <li><a href="#contact" class="block py-2 hover:text-[#B78B50]">Contact</a></li>
@@ -24,7 +24,28 @@
     </header>
 
     <main>
-        <section></section>
+        <section id="home" class="flex min-h-screen items-center bg-linear-to-b from-[#253B35] to-[#49372E] text-[#E9D8B5]">
+            <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 md:grid-cols-2 md:gap-16">
+                <div>
+                    <p class="mb-3 text-sm uppercase tracking-widest text-[#B78B50]">Welcome, Traveler</p>
+                    <h1 class="font-serif text-4xl font-bold sm:text-5xl lg:text-6xl">A Taste of Adventure, A Taste of Teyvat.</h1>
+                    <p class="mt-6 max-w-lg text-lg">
+                        Journey across the seven nations and discover the culinary wonders of Teyvat.
+                        From Mondstadt's hearty meals to Liyue's exquisite delicacies, every dish tells a story.
+                    </p>
+
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="#menu" class="rounded-full bg-[#B78B50] px-6 py-3 font-semibold text-[#253B35]
+                        transition hover:-translate-y-1 hover:bg-[#d0a566]">Explore Our Menu</a>
+                        <a href="#about" class="rounded-full border-2 border-[#B78B50] px-6 py-3 font-semibold
+                        transition hover:-translate-y-1 hover:bg-[#B78B50] hover:text-[#253B35]">About Us</a>
+                    </div>
+                </div>
+
+                <img src="assets/hero.jpg" alt="Taste of Teyvat" class="mx-auto aspect-square max-w-[500px]
+                         rounded-3xl border-4 border-[#B78B50] object-cover shadow-2xl">
+            </div>
+        </section>
     </main>
 </body>
 </html>
