@@ -1,24 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" class="box-border m-0 p-0">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Explorer</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-[#12141c] text-[#e8e8ee] font-[Arial, Helvetica, sans-serif] leading-1.5">
-    <header>
-        <nav class="flex justify-between items-center py-3.75 px-7.5 bg-[#1b1e2b border-b-2 border-solid border-[#6c5ce7]]">
-            <h1 class="text-[24px] text-[#a29bfe]">Game Explorer</h1>
+<body class="bg-[#12141c] text-[#e8e8ee] font-[Arial,Helvetica,sans-serif] leading-[1.5]">
+    <nav class="flex justify-between items-center py-3.75 px-7.5 bg-[#1b1e2b] border-b-2 border-solid border-[#6c5ce7]">
+        <h1 class="font-bold text-[24px] text-[#a29bfe]">Game Explorer</h1>
 
-            <div>
-                <button class="bg-none border-0 text-[#e8e8ee] text-[16px] py-2 px-3.5 cursor-pointer rounded-md
-                               hover:bg-[#2a2e40] active:bg-[#6c5ce7]">Browse</button>
-                
-                <button class="bg-none border-0 text-[#e8e8ee] text-[16px] py-2 px-3.5 cursor-pointer rounded-md
-                               hover:bg-[#2a2e40] active:bg-[#6c5ce7]">Favourites</button>
-            </div>
-        </nav>
-    </header>
+        <div>
+            <button id="homeBtn" class="bg-[#6c5ce7] text-[#e8e8ee] text-[16px] py-2 px-3.5 cursor-pointer rounded-[6px]">Browse</button>
+            <button id="favoritesBtn" class="text-[#e8e8ee] text-[16px] py-2 px-3.5 cursor-pointer rounded-[6px] hover:bg-[#2a2e40]">Favorites</button>
+        </div>
+    </nav>
+
+    <div class="flex justify-center gap-x-2.5 py-6.25 px-5">
+        <input id="searchInput" type="text" placeholder="Search games by name..."
+               class="w-full max-w-112.5 p-3 text-[16px] border border-solid border-[#343850] rounded-[6px] bg-[#1b1e2b] text-[#e8e8ee]">
+        <button id="searchBtn" class="py-[12px] px-[22px] text-[16px] border-0 rounded-[6px] bg-[#6c5ce7] text-white cursor-pointer hover:bg-[#5848c9]">Search</button>
+    </div>
+
+    <main class="pt-0 px-[30px] pb-[40px]">
+        <h2 id="sectionTitle" class="mb-[15px] font-bold text-2xl">Popular Games</h2>
+
+        <p id="message" class="text-center text-[18px] py-[30px] text-[#b4b4c7]"></p>
+
+        <div id="gameGrid" class="grid grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-[20px]"></div>
+    </main>
+    
+    <div id="modal" class="hidden fixed inset-0 bg-black/75 justify-center items-center p-[20px]">
+        <div class="bg-[#1b1e2b] rounded-[8px] max-w-[600px] w-full max-h-[90vh] overflow-y-auto p-[20px]">
+            <button id="closeBtn" class="float-right py-[6px] px-[14px] border-0 rounded-[6px] bg-[#6c5ce7] text-white cursor-pointer">Close</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
