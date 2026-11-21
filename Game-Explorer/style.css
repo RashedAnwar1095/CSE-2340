@@ -53,6 +53,7 @@ body
 .search-area
 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
   padding: 25px 20px;
@@ -84,6 +85,17 @@ body
 .search-area button:hover
 {
   background-color: #5848c9;
+}
+
+.search-area select
+{
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #343850;
+  border-radius: 6px;
+  background-color: #1b1e2b;
+  color: #e8e8ee;
+  cursor: pointer;
 }
 
 main

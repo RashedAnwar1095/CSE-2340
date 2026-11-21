@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game Explorer</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Explorer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <nav class="navbar">
-    <h1 class="logo">Game Explorer</h1>
+    <nav class="navbar">
+        <h1 class="logo">Game Explorer</h1>
 
-    <div class="nav-buttons">
-      <button id="homeBtn" class="nav-btn active">Browse</button>
+        <div class="nav-buttons">
+            <button id="homeBtn" class="nav-btn active">Browse</button>
 
-      <button id="favoritesBtn" class="nav-btn">Favorites</button>
+            <button id="favoritesBtn" class="nav-btn">Favorites</button>
+        </div>
+    </nav>
+
+    <div class="search-area">
+        <input type="text" id="searchInput" placeholder="Search games by name...">
+
+        <button id="searchBtn">Search</button>
+
+        <select id="genreSelect">
+            <option value="">All Genres</option>
+            <option value="action">Action</option>
+            <option value="adventure">Adventure</option>
+            <option value="role-playing-games-rpg">RPG</option>
+            <option value="shooter">Shooter</option>
+            <option value="strategy">Strategy</option>
+            <option value="puzzle">Puzzle</option>
+            <option value="racing">Racing</option>
+            <option value="sports">Sports</option>
+        </select>
     </div>
-  </nav>
 
-  <div class="search-area">
-    <input type="text" id="searchInput" placeholder="Search games by name...">
+    <main>
+        <h2 id="sectionTitle">Popular Games</h2>
 
-    <button id="searchBtn">Search</button>
-  </div>
+        <p id="message" class="message"></p>
 
-  <main>
-    <h2 id="sectionTitle">Popular Games</h2>
+        <div id="gameGrid" class="game-grid"></div>
+    </main>
 
-    <p id="message" class="message"></p>
+    <div id="modal" class="modal hidden">
+        <div class="modal-box">
+            <button id="closeBtn" class="close-btn">Close</button>
 
-    <div id="gameGrid" class="game-grid"></div>
-  </main>
-
-  <div id="modal" class="modal hidden">
-    <div class="modal-box">
-      <button id="closeBtn" class="close-btn">Close</button>
-      
-      <div id="modalContent"></div>
+            <div id="modalContent"></div>
+        </div>
     </div>
-  </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
