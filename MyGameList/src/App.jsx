@@ -51,7 +51,7 @@ function LibraryPage({ games }) {
             <Gamepad2 size={25} />
             <span className="text-sm font-bold tracking-widest">MY COLLECTION</span>
           </div>
-          <h1 className="mt-2 text-4xl font-extrabold">GameVault</h1>
+          <h1 className="mt-2 text-4xl font-extrabold">MyGameList</h1>
           <p className="mt-1 text-muted-foreground">Keep all your video games in one place.</p>
         </div>
         <Button size="lg" onClick={() => navigate("/add")}>
